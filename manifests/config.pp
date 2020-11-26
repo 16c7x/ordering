@@ -11,8 +11,8 @@ class ordering::config {
     require          => Sqlserver_instance['MSSQLSERVER'],
   }
 
-  sqlserver::database { 'mydb':
-    ensure  => present,
-    require => Sqlserver::Config['MSSQLSERVER'],
-  }
+  #sqlserver::database { 'mydb':
+  #  ensure  => present,
+  #  require => Sqlserver::Config['MSSQLSERVER'],
+  #}
 }
