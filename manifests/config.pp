@@ -1,9 +1,9 @@
 class ordering::config {
   sqlserver_instance { 'MSSQLSERVER':
     features              => ['SQL'],
-    source                => 'C:/Users/Administrator/Downloads/SQLServer2019-DEV-x64-ENU',
+    source                => 'D:',
     sql_sysadmin_accounts => ['Administrator'],
-    sa_pwd                => 'Puppetlabs!',
+    #sa_pwd                => 'Puppetlabs!',
   }
 
   sqlserver::config { 'MSSQLSERVER':
