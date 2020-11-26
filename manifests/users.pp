@@ -8,7 +8,7 @@ $admins  = {
 
   $admins.each |String $user, Hash $params| {
     sqlserver::user { $user:
-      ensure   => present,
+      ensure   => 'present',
       database => 'mydb14',
     }
   }
