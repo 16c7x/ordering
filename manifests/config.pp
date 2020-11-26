@@ -12,7 +12,7 @@ class ordering::config {
   }
 
   sqlserver::database { 'mydb14':
-    ensure  => present,
+    ensure  => 'present',
     require => Sqlserver::Config['MSSQLSERVER'],
   }
 }
