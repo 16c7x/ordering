@@ -6,10 +6,10 @@ class ordering::config {
     #sa_pwd                => 'Puppetlabs!',
   }
 
-  #sqlserver::config { 'MSSQLSERVER':
-  #  admin_login_type => 'WINDOWS_LOGIN',
-  #  require          => Sqlserver_instance['MSSQLSERVER'],
-  #}
+  sqlserver::config { 'MSSQLSERVER':
+    admin_login_type => 'WINDOWS_LOGIN',
+    require          => Sqlserver_instance['MSSQLSERVER'],
+  }
 
   #sqlserver::database { 'mydb':
   #  ensure  => present,
