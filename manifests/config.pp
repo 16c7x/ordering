@@ -3,7 +3,7 @@ class ordering::config {
     features              => ['SQL'],
     source                => 'D:',
     sql_sysadmin_accounts => ['Administrator'],
-    #sa_pwd                => 'Puppetlabs!',
+    sa_pwd                => 'Puppetlabs!',
   }
 
   sqlserver::config { 'MSSQLSERVER':
